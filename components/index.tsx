@@ -121,6 +121,7 @@ const Home: NextPage = () => {
           }
           .put textarea {
             height: 50%;
+            min-height: 500px;
           }
           .put button {
             margin-left: 5%;
