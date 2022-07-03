@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import data from "../carddata.json";
-import { imgLoader } from "../imgLoader";
 import { guildget } from "../store/actions/action";
 import { RootState } from "../store/reducers";
 import { CounterState } from "../store/types/state";
