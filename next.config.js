@@ -1,5 +1,5 @@
 const debug = process.env.NODE_ENV !== "production";
-const name = "caremaker";
+const name = "guildcommit1";
 
 const nextConfig = {
   assetPrefix: !debug ? `/${name}/` : "",
