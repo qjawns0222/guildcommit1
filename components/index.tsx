@@ -27,11 +27,13 @@ const Home: NextPage = () => {
     const input = cheuse(id);
     const input1 = cheuse(id);
 
-    input1.map((a: any) => {
+    input1.map((a: any, index: any) => {
       let che = 0;
-      main.guild.map((g: any) => {
+      main.guild.map((g: any, index2: any) => {
         if (a.user == g.user) {
-          a.count = a.count - g.count;
+          if (index > 0 || index2 > 0) {
+            a.count = a.count - g.count;
+          }
         }
       });
     });
