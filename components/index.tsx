@@ -23,7 +23,9 @@ const Home: NextPage = () => {
   const dispatch = useDispatch();
   const btnclick = () => {
     const id: String = dataref.current!.value.replaceAll('"', "");
-
+    if (id == "" || id == null) {
+      return;
+    }
     const input = cheuse(id);
     const input1 = cheuse(id);
 
